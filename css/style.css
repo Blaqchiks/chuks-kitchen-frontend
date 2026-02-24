@@ -154,17 +154,26 @@ body {
   margin-top: 100px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 950px) {
   .page-start .navbar {
     position: absolute;
     background: transparent !important;
   }
+
+  .page-start .mobile-hero-img {
+  height: 50vh;
+}
+
+.page-start .hero-card {
+  margin-top: 70px;
+}
 
   .page-start .hero-card {
     margin-left: 60px;
     max-width: 550px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
+  
 }
 
 /* === MEALS PAGE ==== */
@@ -287,6 +296,45 @@ body {
   color: #fff;
 }
 
+/* ===== Added for responsiveness ≤950px ===== */
+@media (max-width: 950px) {
+  /* ===== MOBILE DROPDOWN MENU FIX ===== */
+
+  .page-meals .navbar-collapse {
+    position: fixed; /* FLOAT over hero */
+    top: 70px; /* below navbar */
+    right: 15px;
+    width: 220px;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    z-index: 3000; /* above hero & overlays */
+  }
+
+  /* Stack nav items vertically */
+  .page-meals .nav-even {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+  }
+
+  .page-meals .nav-even .nav-link {
+    padding: 8px 0;
+    font-weight: 500;
+  }
+
+  /* Login button full width for mobile */
+  .page-meals .navbar-collapse .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+
 /* === DETAILS PAGE ==== */
 
 /*  IMAGE  */
@@ -406,6 +454,44 @@ body {
   border-color: var(--orange);
 }
 
+/* ===== Added for responsiveness ≤950px ===== */
+@media (max-width: 950px) {
+  /* ===== MOBILE DROPDOWN MENU FIX ===== */
+
+  .page-details .navbar-collapse {
+    position: fixed; /* FLOAT over hero */
+    top: 70px; /* below navbar */
+    right: 15px;
+    width: 220px;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    z-index: 3000; /* above hero & overlays */
+  }
+
+  /* Stack nav items vertically */
+  .page-details .nav-even {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+  }
+
+  .page-details .nav-even .nav-link {
+    padding: 8px 0;
+    font-weight: 500;
+  }
+
+  /* Login button full width for mobile */
+  .page-details .navbar-collapse .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
 /* === CART PAGE ==== */
 
 .page-cart .cart-item {
@@ -490,6 +576,44 @@ body {
   height: 22px;
 }
 
+/*  Added for responsiveness ≤950px  */
+@media (max-width: 950px) {
+  /* ===== MOBILE DROPDOWN MENU FIX ===== */
+
+  .page-cart .navbar-collapse {
+    position: fixed; /* FLOAT over hero */
+    top: 70px; /* below navbar */
+    right: 15px;
+    width: 220px;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    z-index: 3000; /* above hero & overlays */
+  }
+
+  /* Stack nav items vertically */
+  .page-cart .nav-even {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+  }
+
+  .page-cart .nav-even .nav-link {
+    padding: 8px 0;
+    font-weight: 500;
+  }
+
+  /* Login button full width for mobile */
+  .page-cart .navbar-collapse .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
 
 
 /* === ORDER PAGE ==== */
@@ -550,6 +674,44 @@ body {
 
 .page-order .delivery-toggle button.active {
   background: var(--orange);
+}
+
+/*  Added for responsiveness ≤950px  */
+@media (max-width: 950px) {
+  /* ===== MOBILE DROPDOWN MENU FIX ===== */
+
+  .page-order .navbar-collapse {
+    position: fixed; /* FLOAT over hero */
+    top: 70px; /* below navbar */
+    right: 15px;
+    width: 220px;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    z-index: 3000; /* above hero & overlays */
+  }
+
+  /* Stack nav items vertically */
+  .page-order .nav-even {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start;
+  }
+
+  .page-order .nav-even .nav-link {
+    padding: 8px 0;
+    font-weight: 500;
+  }
+
+  /* Login button full width for mobile */
+  .page-order .navbar-collapse .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
 }
 
 /* === RESPONSIVE (GLOBAL – VERY IMPORTANT) === */
