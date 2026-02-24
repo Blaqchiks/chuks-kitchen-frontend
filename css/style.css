@@ -147,11 +147,13 @@ body {
 }
 
 .page-start .hero-image img {
-  height: 100vh;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
 }
 
 .page-start .hero-card {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 @media (min-width: 950px) {
@@ -160,11 +162,9 @@ body {
     background: transparent !important;
   }
 
-  .page-start .mobile-hero-img {
-  height: 50vh;
-}
+ 
 
-.page-start .hero-card {
+  .page-start .hero-card {
   margin-top: 70px;
 }
 
@@ -722,10 +722,26 @@ body {
   }
 
   .mobile-hero-img {
-    height: 220px;
+    height: 220px !important;
     width: 100%;
     object-fit: cover;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .mobile-signin-btn {
+    border-radius: 8px;
+    padding: 8px 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .logo-text-mobile {
+    font-family: "Island Moments", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--orange);
+    font-size: 1.8rem;
   }
 
   .hero-card {
